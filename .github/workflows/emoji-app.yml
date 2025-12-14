@@ -1,12 +1,15 @@
 name: Docker Compose CI/CD to Elastic Beanstalk
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
 jobs:
   build-test-deploy:
